@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>E-Herbal</title>
+	<link rel="stylesheet" type="text/css" href="form.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+	<br>
+	<div class="judul">
+	<h2>E-herbal</h2>
+	</div>
+ 	<form action="" method="post">
+ 		<h2><i class="fa fa-user"></i>Form Login</h2>
+ 		<br/>
+ 		<div class="form-group">
+  			<input id="username" type="text" class="input-mode" placeholder="Username">
+  			<small style="color: red;display: none" id="peringatanA">Username telah digunakan</small>
+        	<small style="color: blue;display: none" id="peringatanB">Username belum ada</small>
+        	<br/>
+ 		</div>
+ 		<div class="form-group">
+ 			<input type="password" class="input-mode" placeholder="Password">
+ 			<br/>
+ 			<p class="ket">Belum memiliki akun ? daftar <a href="Daftar.html">disini</a></p>
+ 			<br/>
+ 		<div class="form-group">
+  			<button id="z" class="btn btn-submit" type="submit"><p><a href="Data.html" class="nav">login</a></p> &nbsp; <i class="fa fa-hand-o-right" aria-hidden="true"></i></button>
+  			<p class="hai" style="display: none">Username Salah</p>
+ 		</div>
+ 		
+ 		<script>
+    
+    $(document).ready(function () {
+        $("#username").keyup(function () {
+            if ($("#username").val() == "Lukman"){
+                $("#peringatanA").css("display","block");
+                $("#peringatanB").css("display","none");
+            }else{
+                $("#peringatanB").css("display","block");
+                $("#peringatanA").css("display","none");
+
+            }
+        });
+    });
+</script>
+   
+ <br/>
+
+</body>
+</html>

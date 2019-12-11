@@ -1,0 +1,108 @@
+*{
+ box-sizing:border-box;
+ margin:0 auto;
+}
+body{
+background: greenyellow;
+background-image: url(Obat/icon.png);
+ 
+    
+}
+html,body{
+
+ font-family:Helvetica;
+
+}
+.judul {
+    display: inline;
+    text-align: center;
+    width: auto;
+    background: green;
+    font-size: 300%;
+    font-family: inheri    
+     
+}
+
+form {
+ top:10px;
+ position:relative;
+ width:50%;
+ max-width:400px;
+ background-color:lightgreen;
+ border-radius:3px;
+ box-shadow:0px 0px 3px black;
+ border: 2px solid black;
+ height: 400px;
+}
+form h2 {
+ padding:20px;
+ border-bottom:2px solid #60a4e3;
+ text-align:center;
+background-color:lawngreen;
+border: 1px solid black;
+    
+}
+.form-group{
+ padding:5px 15px;
+ display:block;
+}
+.input-mode{
+ border:1px solid silver;
+ border-radius:3px;
+ font-size:15px;
+ height:50px;
+ padding:0 10px;
+ display:block;
+ width:100%;
+}
+.cek {
+ padding:10px;
+ display:inline-block;
+ height:20px;
+ width:20px;
+}
+.btn-submit{
+ cursor:pointer;
+ padding: 10px;
+    height: 50px;
+    width: 50%;
+    display: block;
+    background-color:lawngreen;
+    color: white;
+    font-size: 20px;
+    border: 2px solid #135592;
+    border-radius: 2px;
+    border: 2px solid black;
+   
+}
+.form-cek label{
+ display:inline-block;
+ padding:10px;
+ line-height:10px;
+
+}
+.navbar{    
+	background-color:greenyellow;
+	width: 370px;
+	position: fixed;
+  
+  
+
+}
+.navbar .ikuti{ 
+        float:left;
+        font-family:Lohit Telugu;
+        font-size:140%;
+        margin:12px;
+    
+   
+}
+
+.navbar img{ 
+        float:left;
+        margin:7px 10px;
+        width:35px;
+        height:35px;
+}
+
+

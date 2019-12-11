@@ -1,0 +1,41 @@
+<html>
+<head>
+    <title>Cobak</title>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+    <button id="z" >Button</button>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus adipisci, autem cum dicta et excepturi exercitationem in nostrum pariatur porro quam quo sed, ullam! At beatae dolore libero quia tempore.</p>
+
+    <fieldset>
+        <legend>Form</legend>
+        <label>Username</label>
+        <input id="username" placeholder="masukkan username">
+        <br>
+        <small style="color: red;display: none" id="peringatanA">Username telah digunakan</small>
+        <small style="color: blue;display: none" id="peringatanB">Username belum ada</small>
+
+    </fieldset>
+
+    <script>
+    $(document).ready(function() {
+         $("#z").click(function(){
+             $("p").toggle(100);
+         });
+
+    });
+    $(document).ready(function () {
+        $("#username").keyup(function () {
+            if ($("#username").val() == "manu"){
+                $("#peringatanA").css("display","block");
+                $("#peringatanB").css("display","none");
+            }else{
+                $("#peringatanB").css("display","block");
+                $("#peringatanA").css("display","none");
+
+            }
+        });
+    });
+</script>
+</body>
+</html>
